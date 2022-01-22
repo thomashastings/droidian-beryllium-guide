@@ -19,7 +19,9 @@ A collection of tips to install and use Droidian on the Pocophone F1 (beryllium)
 - Run `fastboot flash recovery twrp-*-beryllium.img`
 
 ## 3. Install Droidian in TWRP
-- Download the files for Droidian: 
+- Download the files for Droidian:
+    - Official `droidian-rootfs` and `droidian-devtools` for `arm64` from [the repo](https://github.com/droidian-images/rootfs-api28gsi-all/releases/tag/droidian%2Fbullseye%2F23) 
+    - [Boot images](https://github.com/thomashastings/droidian-beryllium-guide/releases/download/Boot/droidian-boot-beryllium.zip)
 - Boot into TWRP by pressing Vol+ and Power buttons until the phone vibrates
 - In TWRP go to `Wipe` and `Format data` (type yes)
 - IMPORTANT: Reboot into TWRP again
@@ -32,3 +34,12 @@ A collection of tips to install and use Droidian on the Pocophone F1 (beryllium)
 - Go back to main menu and reboot to `System`
 - (TWRP might complain that there is no OS installed, but that's fine)
 - If all goes well, your phone will boot to the Droidian lock screen, the unlock code is `1234`
+
+## 4. Tweaks
+These tweaks can be run when connected to the phone over SSH or straight from the `King's Cross` terminal app.
+
+### Bluetooth
+`sudo touch /var/lib/bluetooth/board-address`
+
+## Credit
+TBD
