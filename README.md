@@ -45,6 +45,9 @@ These tweaks can be run when connected to the phone over SSH or straight from th
 
 Furthermore, the tweaks are also available as a [runnable script](https://github.com/thomashastings/droidian-beryllium-guide/blob/main/beryllium-tweaks.sh).
 
+### Mobile data
+Mobile data works after setting up the APN. It may stop working after a call, then you need to tap on/off twice in the settings and it will work again
+
 ### Bluetooth
 `sudo touch /var/lib/bluetooth/board-address`
 
@@ -109,3 +112,6 @@ waydroid prop set persist.waydroid.suspend false
 [Droidian](http://droidian.org/)
 
 [UBports](https://ubuntu-touch.io/)
+
+
+For further assistance, visit the [Droidian Telegram Group](https://t.me/droidianlinux).
