@@ -4,6 +4,9 @@ echo ""
 echo "Applying bluetooth fix..."
 sudo touch /var/lib/bluetooth/board-address
 
+echo "Updating repos..."
+sudo apt update
+
 echo ""
 read -p "Enable ipa.service? [Y/n] " CH
 if [ "$CH" == "y" ] || [ "$CH" == "Y" ]; then
@@ -32,7 +35,7 @@ if [ "$CH" == "y" ] || [ "$CH" == "Y" ]; then
     echo "Applying notch-fix..."
 cat >>  ~/.config/gtk-3.0/gtk.css<< EOF
 .phosh-topbar-clock {
-   margin-left: 195px;
+   margin-left: 192px;
 }
 
 .phosh-panel-btn > box {
@@ -59,8 +62,10 @@ if [ "$CH" == "y" ] || [ "$CH" == "Y" ]; then
     echo "deb [signed-by=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ $DISTRO main" > ~/waydroid.list && \
     sudo mv ~/waydroid.list /etc/apt/sources.list.d/waydroid.list && \
     sudo apt update
+    sudo apt -y install waydroid
     sudo waydroid init
     sudo systemctl start waydroid-container
     echo ""
-    echo "Installed Waydroid, may need to reboot to start it."
+    echo "Installed Waydroid."
+    echo "Now flash boot-path.img to Boot partition in TWRP, and reboot."
 fi
