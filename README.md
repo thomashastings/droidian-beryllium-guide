@@ -116,4 +116,4 @@ waydroid prop set persist.waydroid.suspend false
 [UBports](https://ubuntu-touch.io/)
 
 
-For further assistance, visit the [Droidian Telegram Group](https://t.me/droidianlinux).
+For further assistance, visit the [Droidian for Poco F1](https://t.me/pocof1droidian) and [Droidian](https://t.me/droidianlinux) Telegram groups.
