@@ -41,9 +41,11 @@ TWRP:
 - If all goes well, your phone will boot to the Droidian lock screen, the unlock code is `1234`
 
 ## Tweaks
-These tweaks can be run when connected to the phone over SSH or straight from the `King's Cross` terminal app.
+These device specific tweaks can be run when connected to the phone over SSH or straight from the `King's Cross` terminal app.
 
-Furthermore, the tweaks are also available as a [runnable script](https://github.com/thomashastings/droidian-beryllium-guide/blob/main/beryllium-tweaks.sh).
+Furthermore, they are also available as a [runnable script](https://github.com/thomashastings/droidian-beryllium-guide/blob/main/beryllium-tweaks.sh).
+
+For further Droidian tweaks (e. g., ringtones, mobile data, power saving), check [here](https://pad.mrcyjanek.net/p/r.901550d73e46cfeced7e4f12e969d120).
 
 ### Mobile data
 Mobile data works after setting up the APN. It may stop working after a call, then you need to tap on/off twice in the settings and it will work again
