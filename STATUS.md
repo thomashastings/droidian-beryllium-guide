@@ -1,7 +1,7 @@
-*Device Checklist for Pocophone F1 (beryllium) on Droidian
+# Device Checklist for Pocophone F1 (beryllium) on Droidian
 This represents the state of the Droidian port when flashed according to the [guide](https://github.com/Unofficial-droidian-for-pocof1/droidian-beryllium-guide).
  
-***Working
+### Working
 - Actors: Manual brightness
 - Actors: Notification LED
 - Actors: Torchlight
@@ -38,10 +38,10 @@ This represents the state of the Droidian port when flashed according to the [gu
 - WiFi: Hotspot can be configured, switched on and off, can serve data to clients
 - WiFi: Persistent MAC address between reboots
 
-***Working with additional steps
+### Working with additional steps
 - Misc: Reset to factory defaults (can be done in recovery)
 
-***Not working
+###Not working
 - Camera: Video (creates an empty `.mkv` file and freezes; in Waydroid camera functions fully)
 - Sensors: Fingerprint reader, register and use fingerprints (fingerprint sensor just wakes up screen)
 - Misc: Shutdown / Reboot (phone hangs after both, long press Power button to turn on again)
@@ -50,7 +50,7 @@ This represents the state of the Droidian port when flashed according to the [gu
 - USB: ADB access
 - USB: MTP access
 
-***Not tested
+### Not tested
 - Cellular: Switch connection speed between 2G/3G/4G works for all SIMs
 - Cellular: Switch preferred SIM for calling and SMS - only for devices that support it
 - Cellular: Voice in calls
